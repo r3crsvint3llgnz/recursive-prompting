@@ -1,3 +1,7 @@
+**Navigation:** [← Previous: Abstract](abstract.md) | [Back to Index](README.md) | [Next: Methodology →](methodology.md)
+
+---
+
 # Introduction
 
 ## Introduction
@@ -40,3 +44,11 @@ I share this work so others can:
 ---
 
 **Important Limitation:** This paper documents my practice alone. All effectiveness measures come from my personal scoring rubric and judgment. These findings should be treated as exploratory, subjective, and hypothesis-generating—not as proof of effectiveness or generalizable conclusions.
+
+---
+
+**Navigation:** [← Previous: Abstract](abstract.md) | [Back to Index](README.md) | [Next: Methodology →](methodology.md)
+
+---
+
+**License:** This work is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | **Trademark:** Recursive Prompting™ by Seth Robins (Recursive Intelligence™) | See [TRADEMARK.md](TRADEMARK.md) for usage guidelines

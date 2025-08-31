@@ -1,0 +1,1 @@
+**Navigation:** [← Previous: Methodology](methodology.md) | [Back to Index](README.md) | [Next: Pattern Analysis →](pattern_analysis.md)

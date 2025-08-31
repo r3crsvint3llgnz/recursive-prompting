@@ -1,3 +1,7 @@
+**Navigation:** [← Previous: Pattern Analysis](pattern_analysis.md) | [Back to Index](README.md) | [Next: Results →](results.md)
+
+---
+
 # Recursive Prompting Pattern Templates (v1)
 
 ## Seed → Probe → RoleShift
@@ -507,5 +511,10 @@
 
 **Note from my practice**: This prevents me from shipping rigid but unusable outputs.
 
+---
+
+**Navigation:** [← Previous: Pattern Analysis](pattern_analysis.md) | [Back to Index](README.md) | [Next: Results →](results.md)
 
 ---
+
+**License:** Pattern templates released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (Public Domain) | **Trademark:** Recursive Prompting™ by Seth Robins (Recursive Intelligence™) | See [TRADEMARK.md](TRADEMARK.md) for usage guidelines
