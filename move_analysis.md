@@ -4,6 +4,8 @@
 
 This section documents what I found when I analyzed the 13 types of moves I used across 441 conversations (1,980 moves in total). These observations are based entirely on my own practice, scored with my personal rubric, and should be treated as exploratory and subjective. They helped me understand how I naturally prompt and which moves I might teach to others through reusable templates.
 
+For detailed definitions and examples of each move type, see the [Move Types Reference](move_types_reference.md).
+
 ### How Often I Used Each Move
 
 Here’s how my move usage broke down in my dataset:

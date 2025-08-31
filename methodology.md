@@ -21,7 +21,7 @@ The dataset came entirely from my own conversation history. These included a var
 
 ### Move Classification
 
-I developed a taxonomy of 13 move types based on what I observed in my own prompting. Examples include Probe, ScopeTighten, Refine, RoleShift, Meta, and Hypothesis. Each prompt I made was manually classified by me into one of these categories.
+I developed a taxonomy of 13 move types based on what I observed in my own prompting. Examples include Probe, ScopeTighten, Refine, RoleShift, Meta, and Hypothesis. Each prompt I made was manually classified by me into one of these categories. For complete definitions and examples of all 13 move types, see [Move Types Reference](move_types_reference.md).
 
 **Important biases:** I did all classification myself without independent validation. This means the labels reflect my own interpretation and include subjective bias. Additionally, I tended to analyze conversations I considered "successful," introducing selection bias into the dataset.
 

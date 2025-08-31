@@ -28,19 +28,19 @@ When I used metacognitive reflection, systematic decomposition, and iterative re
 1. **[Abstract](abstract.md)** - Executive summary and key findings
 2. **[Introduction](introduction.md)** - Background, motivation, and scope
 3. **[Methodology](methodology.md)** - Data collection and analysis approach
-4. **[Move Analysis](move_analysis.md)** - Analysis of 13 move types and transition patterns
-5. **[Pattern Analysis](pattern_analysis.md)** - 20 recurring patterns across 5 categories
-6. **[Pattern Templates v1](pattern_templates_v1.md)** - 16 reusable templates with examples
-7. **[Results](results.md)** - Effectiveness metrics and outcomes
-8. **[Effectiveness Analysis](effectiveness_analysis.md)** - Success factors and failure modes
-9. **[Discussion](discussion.md)** - Implications and future directions
-10. **[Conclusion](conclusion.md)** - Summary and next steps
-11. **[References](references.md)** - Context and further reading
+4. **[Move Types Reference](move_types_reference.md)** - Definitions and examples for all 13 move types
+5. **[Move Analysis](move_analysis.md)** - Analysis of 13 move types and transition patterns
+6. **[Pattern Analysis](pattern_analysis.md)** - 20 recurring patterns across 5 categories
+7. **[Pattern Templates v1](pattern_templates_v1.md)** - 16 reusable templates with examples
+8. **[Results](results.md)** - Effectiveness metrics and outcomes
+9. **[Effectiveness Analysis](effectiveness_analysis.md)** - Success factors and failure modes
+10. **[Discussion](discussion.md)** - Implications and future directions
+11. **[Conclusion](conclusion.md)** - Summary and next steps
+12. **[References](references.md)** - Context and further reading
 
 ### Supporting Materials
 - **[Pattern Templates JSON](pattern_templates_v1.json)** - Machine-readable template definitions
-- **[Complete Whitepaper](complete_whitepaper.md)** - Single-document version
-- **[Aligned Version](complete_whitepaper_aligned.md)** - Alternative formatting
+- **[Complete Whitepaper](complete_whitepaper.md)** - Single-document version with all sections
 - **[Metadata](metadata.json)** - Publication metadata and data summary
 
 ### Legal & Licensing
@@ -53,12 +53,14 @@ When I used metacognitive reflection, systematic decomposition, and iterative re
 **New to Recursive Prompting?** Start with:
 1. [Introduction](introduction.md) - Understand the concept and motivation
 2. [Abstract](abstract.md) - Get the key findings overview
-3. [Pattern Templates v1](pattern_templates_v1.md) - See practical examples you can use
+3. [Move Types Reference](move_types_reference.md) - Learn the 13 core building blocks
+4. [Pattern Templates v1](pattern_templates_v1.md) - See practical examples you can use
 
 **Researchers and Practitioners?** Focus on:
 1. [Methodology](methodology.md) - Understand the analysis approach
-2. [Move Analysis](move_analysis.md) - Learn about the 13 move types
-3. [Effectiveness Analysis](effectiveness_analysis.md) - Success factors and limitations
+2. [Move Types Reference](move_types_reference.md) - Master the foundational move types
+3. [Move Analysis](move_analysis.md) - See usage patterns and transitions
+4. [Effectiveness Analysis](effectiveness_analysis.md) - Success factors and limitations
 
 ## Key Statistics
 
