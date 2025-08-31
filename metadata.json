@@ -1,0 +1,35 @@
+{
+  "title": "Recursive Prompting Methodology: An Exploratory Self-Study",
+  "author": "Seth Robins (Recursive Intelligence)",
+  "abstract_summary": "Exploratory self-analysis of 441 of my own conversation threads (1,980 moves, 13 move types). I identified 20 recurring sequence patterns and formalized 16 reusable templates (v1). This is a hypothesis-generating study based on my own practice, not a generalizable proof.",
+  "keywords": [
+    "recursive prompting",
+    "self-study",
+    "prompt engineering",
+    "human-AI collaboration",
+    "conversation analysis",
+    "AI interaction patterns",
+    "personal methodology",
+    "education",
+    "business decision support"
+  ],
+  "generated_date": "2025-08-29T19:45:43",
+  "total_sections": 10,
+  "data_summary": {
+    "total_conversations": 441,
+    "total_moves": 1980,
+    "unique_move_types": 13,
+    "unique_patterns": 20,
+    "templates_formalized_v1": 16,
+    "subjective_effectiveness_estimate_pct": 34.0,
+    "effectiveness_note": "This ~34% improvement estimate comes from my personal scoring rubric. It reflects my judgment, not objective or generalizable proof.",
+    "progression_conversations": 370
+  },
+  "governance": {
+    "licensing_plan": {
+      "text_and_analysis": "CC BY-SA 4.0",
+      "data_and_templates": "CC0 1.0"
+    },
+    "trademark": "\u201cRecursive Prompting\u201d is my coined methodology under Recursive Intelligence; see TRADEMARK.md for attribution guidance."
+  }
+}

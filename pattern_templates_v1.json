@@ -1,0 +1,393 @@
+[
+  {
+    "template_id": "sequence_seed_probe_roleshift",
+    "name": "Seed → Probe → RoleShift",
+    "description": "I set context, explore options, then switch perspective to stress-test my direction.",
+    "pattern_moves": [
+      "Seed",
+      "Probe",
+      "RoleShift"
+    ],
+    "example_prompts": [
+      "Here’s my goal and constraints: [goal/constraints].",
+      "Give me 5 different approaches, each with 1–2 pros and cons.",
+      "Now evaluate the approaches as a skeptical reviewer and call out risks I’m missing."
+    ],
+    "generalized_template": "**Step 1 — Seed (establish the task)**: State the goal, constraints, and success criteria in one compact brief.\n**Step 2 — Probe (generate alternatives)**: Ask for multiple approaches with quick trade‑offs.\n**Step 3 — RoleShift (stress‑test)**: Switch the model into a role (skeptic, domain expert, user) to surface blind spots.\n\n**When I use it**: Early in planning when I want breadth first, then a reality check.",
+    "use_cases": [
+      "personal planning",
+      "team decision pre‑read",
+      "study strategy options"
+    ],
+    "effectiveness_note": "In my sessions, the perspective shift reliably exposes hidden constraints before I commit.",
+    "difficulty_level": "intermediate"
+  },
+  {
+    "template_id": "sequence_probe_scopetighten_refine",
+    "name": "Probe → ScopeTighten → Refine",
+    "description": "I start broad, narrow to the strongest thread, then polish it.",
+    "pattern_moves": [
+      "Probe",
+      "ScopeTighten",
+      "Refine"
+    ],
+    "example_prompts": [
+      "Brainstorm 6 options; keep them concise.",
+      "Focus only on the option with the best effort/impact ratio and expand it.",
+      "Refine the draft to be clearer and more actionable; remove filler."
+    ],
+    "generalized_template": "**Step 1 — Probe (diverge)**: Generate several options.\n**Step 2 — ScopeTighten (converge)**: Select one criterion (e.g., speed) and deepen only that path.\n**Step 3 — Refine (polish)**: Improve clarity, concision, and actionability.\n\n**When I use it**: To avoid bike‑shedding and get one good draft moving.",
+    "use_cases": [
+      "one‑pager drafting",
+      "feature cut‑down",
+      "study notes distillation"
+    ],
+    "effectiveness_note": "Consciously switching from divergence to convergence cuts decision fatigue for me.",
+    "difficulty_level": "beginner"
+  },
+  {
+    "template_id": "sequence_scopetighten_scopeloosen_recurse",
+    "name": "ScopeTighten → ScopeLoosen → Recurse",
+    "description": "I zoom in for specifics, zoom out to check fit, then iterate.",
+    "pattern_moves": [
+      "ScopeTighten",
+      "ScopeLoosen",
+      "Recurse"
+    ],
+    "example_prompts": [
+      "Detail only the error path for this API call.",
+      "Zoom out: how does this affect the end‑to‑end user flow?",
+      "Revise the fix plan to reflect both the low‑level details and the bigger impact."
+    ],
+    "generalized_template": "**Step 1 — ScopeTighten**: Constrain to one slice of the problem.\n**Step 2 — ScopeLoosen**: Re‑evaluate the wider context/impacts.\n**Step 3 — Recurse**: Produce an improved synthesis.\n\n**When I use it**: Systems work where local changes ripple globally.",
+    "use_cases": [
+      "bug triage",
+      "policy changes",
+      "curriculum sequencing"
+    ],
+    "effectiveness_note": "The deliberate zoom dance helps me avoid local optimizations that backfire later.",
+    "difficulty_level": "intermediate"
+  },
+  {
+    "template_id": "sequence_meta_decompose_seed",
+    "name": "Meta → Decompose → Seed",
+    "description": "I pause to reflect, break the problem into parts, then seed the first part precisely.",
+    "pattern_moves": [
+      "Meta",
+      "Decompose",
+      "Seed"
+    ],
+    "example_prompts": [
+      "Quick check: what’s the actual question I’m trying to answer?",
+      "Split this into 3–5 sub‑tasks with clear inputs/outputs.",
+      "Seed sub‑task A: define inputs, desired output, and acceptance criteria."
+    ],
+    "generalized_template": "**Step 1 — Meta (reflect)**: Re‑articulate the target and success signal.\n**Step 2 — Decompose**: Partition into minimal sub‑tasks.\n**Step 3 — Seed**: Start one sub‑task with crisp constraints.\n\n**When I use it**: Whenever I feel fuzzy about the objective.",
+    "use_cases": [
+      "research planning",
+      "project kickoffs",
+      "study plans"
+    ],
+    "effectiveness_note": "Meta first prevents me from accelerating in the wrong direction.",
+    "difficulty_level": "beginner"
+  },
+  {
+    "template_id": "sequence_seed_constraintsadd_scopetighten",
+    "name": "Seed → ConstraintsAdd → ScopeTighten",
+    "description": "I define the task, add guardrails, then narrow scope to hit a crisp target.",
+    "pattern_moves": [
+      "Seed",
+      "ConstraintsAdd",
+      "ScopeTighten"
+    ],
+    "example_prompts": [
+      "Draft a summary of [topic] for a general audience.",
+      "Add constraints: 150 words, 3 bullets max, avoid jargon.",
+      "Limit scope to sections 2–4 only."
+    ],
+    "generalized_template": "**Step 1 — Seed**: State the task plainly.\n**Step 2 — ConstraintsAdd**: Add measurable bounds.\n**Step 3 — ScopeTighten**: Exclude everything that isn’t the target.\n\n**When I use it**: To get crisp output fast without overreach.",
+    "use_cases": [
+      "exec summaries",
+      "release notes",
+      "lesson abstracts"
+    ],
+    "effectiveness_note": "Well‑chosen constraints give me better first passes than endless iterations.",
+    "difficulty_level": "beginner"
+  },
+  {
+    "template_id": "sequence_probe_compare_refine",
+    "name": "Probe → Compare → Refine",
+    "description": "I generate alternatives, compare on criteria, then merge or refine the winner.",
+    "pattern_moves": [
+      "Probe",
+      "Compare",
+      "Refine"
+    ],
+    "example_prompts": [
+      "List 4 solutions with brief pros/cons.",
+      "Compare them on cost, speed, and quality; score 1–5 on each.",
+      "Refine the top option by incorporating the best elements from others."
+    ],
+    "generalized_template": "**Step 1 — Probe**: Produce viable alternatives.\n**Step 2 — Compare**: Score on 2–3 chosen criteria.\n**Step 3 — Refine**: Improve the top candidate with borrow‑and‑blend.\n\n**When I use it**: Structured decisions where trade‑offs matter.",
+    "use_cases": [
+      "tool selection",
+      "study plan methods",
+      "feature approach"
+    ],
+    "effectiveness_note": "A light scoring pass stops me from chasing shiny options.",
+    "difficulty_level": "intermediate"
+  },
+  {
+    "template_id": "sequence_decompose_seed_recurse",
+    "name": "Decompose → Seed → Recurse",
+    "description": "I break down a goal, seed the first unit of work, then iterate upwards.",
+    "pattern_moves": [
+      "Decompose",
+      "Seed",
+      "Recurse"
+    ],
+    "example_prompts": [
+      "Break the project into sequential steps with deliverables.",
+      "Seed Step 1: acceptance criteria, risks, and a draft checklist.",
+      "Improve Step 1 using feedback, then propose Step 2’s seed."
+    ],
+    "generalized_template": "**Step 1 — Decompose**: Ordered steps with outputs.\n**Step 2 — Seed**: Fully specify the next executable chunk.\n**Step 3 — Recurse**: Iterate stepwise and roll improvements upward.\n\n**When I use it**: For long efforts where momentum matters.",
+    "use_cases": [
+      "feature delivery",
+      "research sprints",
+      "course unit planning"
+    ],
+    "effectiveness_note": "Keeps me shipping instead of endlessly planning.",
+    "difficulty_level": "intermediate"
+  },
+  {
+    "template_id": "sequence_roleshift_probe_compare",
+    "name": "RoleShift → Probe → Compare",
+    "description": "I adopt a role to reveal blind spots, explore fixes, then evaluate trade‑offs.",
+    "pattern_moves": [
+      "RoleShift",
+      "Probe",
+      "Compare"
+    ],
+    "example_prompts": [
+      "As a new user, what confuses me in this flow?",
+      "Suggest 3 improvements that reduce confusion most.",
+      "Compare those against the time required to implement."
+    ],
+    "generalized_template": "**Step 1 — RoleShift**: Choose a perspective (novice, expert, stakeholder).\n**Step 2 — Probe**: Generate role‑aware remedies.\n**Step 3 — Compare**: Evaluate on impact vs. effort.\n\n**When I use it**: To balance empathy with pragmatism.",
+    "use_cases": [
+      "UX tweaks",
+      "documentation passes",
+      "presentation edits"
+    ],
+    "effectiveness_note": "Role‑switching makes assumptions visible to me.",
+    "difficulty_level": "beginner"
+  },
+  {
+    "template_id": "sequence_seed_probe_scopeloosen",
+    "name": "Seed → Probe → ScopeLoosen",
+    "description": "I define the problem, explore options, then deliberately widen context to catch adjacencies.",
+    "pattern_moves": [
+      "Seed",
+      "Probe",
+      "ScopeLoosen"
+    ],
+    "example_prompts": [
+      "Plan a weekly exercise routine.",
+      "Offer 5 variations for different energy levels.",
+      "Broaden: include low‑equipment and travel scenarios."
+    ],
+    "generalized_template": "**Step 1 — Seed**: Define the base task.\n**Step 2 — Probe**: Provide options.\n**Step 3 — ScopeLoosen**: Add adjacent contexts so plans survive real life.\n\n**When I use it**: Planning under uncertainty.",
+    "use_cases": [
+      "habit design",
+      "study plans",
+      "backup strategies"
+    ],
+    "effectiveness_note": "Adding adjacencies reduces my plan‑fragility.",
+    "difficulty_level": "beginner"
+  },
+  {
+    "template_id": "sequence_probe_formatcontrol_refine",
+    "name": "Probe → FormatControl → Refine",
+    "description": "I explore ideas, structure them into a usable format, then tighten language.",
+    "pattern_moves": [
+      "Probe",
+      "FormatControl",
+      "Refine"
+    ],
+    "example_prompts": [
+      "Give me 6 ideas for the article’s angle.",
+      "Organize them in a table with audience, promise, and proof.",
+      "Refine rows 2 and 4 to be punchy and specific."
+    ],
+    "generalized_template": "**Step 1 — Probe**: Generate raw material.\n**Step 2 — FormatControl**: Force a structure (table/outline/checklist).\n**Step 3 — Refine**: Edit for clarity and specificity.\n\n**When I use it**: Turning brainstorms into assets.",
+    "use_cases": [
+      "content planning",
+      "meeting prep",
+      "backlog grooming"
+    ],
+    "effectiveness_note": "A structure makes weak ideas obvious to me.",
+    "difficulty_level": "beginner"
+  },
+  {
+    "template_id": "sequence_formatcontrol_seed_refine",
+    "name": "FormatControl → Seed → Refine",
+    "description": "I choose the output skeleton first, then fill it, then iterate.",
+    "pattern_moves": [
+      "FormatControl",
+      "Seed",
+      "Refine"
+    ],
+    "example_prompts": [
+      "Use this outline: {Problem, Approach, Outcome, Next Steps}.",
+      "Populate it using my notes: [paste notes].",
+      "Refine the transitions and remove jargon."
+    ],
+    "generalized_template": "**Step 1 — FormatControl**: Declare the structure up front.\n**Step 2 — Seed**: Fill it with relevant content.\n**Step 3 — Refine**: Improve flow and readability.\n\n**When I use it**: For repeatable documents and updates.",
+    "use_cases": [
+      "status updates",
+      "case summaries",
+      "lesson drafts"
+    ],
+    "effectiveness_note": "Front‑loading structure keeps me from wandering.",
+    "difficulty_level": "beginner"
+  },
+  {
+    "template_id": "sequence_hypothesis_probe_meta",
+    "name": "Hypothesis → Probe → Meta",
+    "description": "I start with a testable guess, explore needed evidence, then reflect on confidence and next steps.",
+    "pattern_moves": [
+      "Hypothesis",
+      "Probe",
+      "Meta"
+    ],
+    "example_prompts": [
+      "Hypothesis: churn spikes during onboarding, not after.",
+      "What evidence would confirm or falsify this? List data and quick checks.",
+      "Reflect: what’s my confidence now, and what’s the next smallest test?"
+    ],
+    "generalized_template": "**Step 1 — Hypothesis**: State a falsifiable claim.\n**Step 2 — Probe**: Identify signals, counter‑signals, and checks.\n**Step 3 — Meta**: Update confidence and plan the next measurement.\n\n**When I use it**: Anytime I catch myself assuming without evidence.",
+    "use_cases": [
+      "analytics planning",
+      "study diagnostics",
+      "market hunches"
+    ],
+    "effectiveness_note": "This stops me from bias‑confirming in loops.",
+    "difficulty_level": "advanced"
+  },
+  {
+    "template_id": "sequence_constraintsadd_scopetighten_refine",
+    "name": "ConstraintsAdd → ScopeTighten → Refine",
+    "description": "I add guardrails, narrow to the core slice, then polish for delivery.",
+    "pattern_moves": [
+      "ConstraintsAdd",
+      "ScopeTighten",
+      "Refine"
+    ],
+    "example_prompts": [
+      "Constraints: must be ADA compliant and mobile‑friendly.",
+      "Narrow to color/contrast only for this pass.",
+      "Refine the palette and annotations for handoff."
+    ],
+    "generalized_template": "**Step 1 — ConstraintsAdd**: Introduce hard requirements.\n**Step 2 — ScopeTighten**: Select one slice to tackle now.\n**Step 3 — Refine**: Prepare a crisp deliverable.\n\n**When I use it**: Iterative compliance or quality passes.",
+    "use_cases": [
+      "accessibility audits",
+      "policy edits",
+      "QA sweeps"
+    ],
+    "effectiveness_note": "A narrow lane lets me finish instead of dabbling.",
+    "difficulty_level": "intermediate"
+  },
+  {
+    "template_id": "sequence_seed_meta_seed",
+    "name": "Seed → Meta → Seed",
+    "description": "I seed a task, reflect if it’s the right target, then re‑seed with the corrected aim.",
+    "pattern_moves": [
+      "Seed",
+      "Meta",
+      "Seed"
+    ],
+    "example_prompts": [
+      "Draft a 3‑slide pitch for [idea].",
+      "Meta: who is the real decision‑maker and what do they care about?",
+      "Re‑seed the pitch aimed at that person’s priorities."
+    ],
+    "generalized_template": "**Step 1 — Seed**: Produce a first swing.\n**Step 2 — Meta**: Check audience/goal alignment.\n**Step 3 — Seed**: Re‑issue the task with the aligned target.\n\n**When I use it**: When early drafts feel weirdly off.",
+    "use_cases": [
+      "stakeholder comms",
+      "cover letters",
+      "lesson hooks"
+    ],
+    "effectiveness_note": "Mid‑course correction beats polishing the wrong thing.",
+    "difficulty_level": "beginner"
+  },
+  {
+    "template_id": "sequence_probe_recurse_refine",
+    "name": "Probe → Recurse → Refine",
+    "description": "I generate, build on the strongest candidate, then tighten the result.",
+    "pattern_moves": [
+      "Probe",
+      "Recurse",
+      "Refine"
+    ],
+    "example_prompts": [
+      "List 8 potential headlines.",
+      "Expand only headline #3 into a short intro paragraph.",
+      "Refine the paragraph to be vivid and concrete."
+    ],
+    "generalized_template": "**Step 1 — Probe**: Create a spread of candidates.\n**Step 2 — Recurse**: Deepen one candidate with context.\n**Step 3 — Refine**: Edit for impact and clarity.\n\n**When I use it**: Creative choices where quality emerges in layers.",
+    "use_cases": [
+      "titles/captions",
+      "taglines",
+      "UI microcopy"
+    ],
+    "effectiveness_note": "Layering avoids overcommitting to a weak seed.",
+    "difficulty_level": "beginner"
+  },
+  {
+    "template_id": "sequence_meta_scopetighten_compare",
+    "name": "Meta → ScopeTighten → Compare",
+    "description": "I reflect, narrow the target, then compare two precise options.",
+    "pattern_moves": [
+      "Meta",
+      "ScopeTighten",
+      "Compare"
+    ],
+    "example_prompts": [
+      "Meta: what’s the primary metric I’m trying to move?",
+      "Narrow: optimize only for onboarding time, not conversion.",
+      "Compare two flows side‑by‑side against that metric."
+    ],
+    "generalized_template": "**Step 1 — Meta**: Re‑identify the single success metric.\n**Step 2 — ScopeTighten**: Optimize only for that metric.\n**Step 3 — Compare**: Evaluate two candidate solutions strictly on metric impact.\n\n**When I use it**: Decision knots where criteria keep multiplying.",
+    "use_cases": [
+      "product flows",
+      "study schedules",
+      "process tweaks"
+    ],
+    "effectiveness_note": "Strict criteria discipline keeps me from hedging.",
+    "difficulty_level": "intermediate"
+  },
+  {
+    "template_id": "sequence_roleshift_scopetighten_scopeloosen",
+    "name": "RoleShift → ScopeTighten → ScopeLoosen",
+    "description": "I use a new role to find specifics, then widen to implications before I decide.",
+    "pattern_moves": [
+      "RoleShift",
+      "ScopeTighten",
+      "ScopeLoosen"
+    ],
+    "example_prompts": [
+      "As a compliance officer, what details matter most here?",
+      "Narrow: list only the non‑negotiable requirements.",
+      "Widen: what follow‑on effects will those requirements have on usability?"
+    ],
+    "generalized_template": "**Step 1 — RoleShift**: Choose a role that spotlights different risks.\n**Step 2 — ScopeTighten**: Extract the must‑haves.\n**Step 3 — ScopeLoosen**: Anticipate cross‑effects before committing.\n\n**When I use it**: Balancing strict requirements with human impact.",
+    "use_cases": [
+      "policy/UX balance",
+      "safety reviews",
+      "rubric design"
+    ],
+    "effectiveness_note": "This prevents me from shipping rigid but unusable outputs.",
+    "difficulty_level": "advanced"
+  }
+]
