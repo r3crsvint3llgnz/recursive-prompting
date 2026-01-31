@@ -4,7 +4,7 @@
 
 # Abstract
 
-This white paper documents an exploratory, single-practitioner analysis (n=1) of recursive prompting based on 441 of my own conversation threads comprising 1,980 prompting moves across 13 move types. Through this self-analysis, I identified 20 recurring patterns distilled into 16 reusable templates (v1) across five categories: Exploration, Refinement, Metacognitive, Iterative Development, and Structured Problem-Solving.
+This whitepaper documents an exploratory, single-practitioner analysis (n=1) of **Recursive Prompting** based on 441 of my own conversation threads comprising 1,980 prompting moves across 13 Core Steering Moves. Through this self-analysis, I identified 20 recurring patterns distilled into 16 reusable templates (v1) across five categories: Exploration, Refinement, Metacognitive, Iterative Development, and Structured Problem-Solving.
 
 My goal was not to prove general effectiveness, but to understand my own prompting techniques well enough to teach them to others. The numbers and structures presented here come from patterns I observed in my own ChatGPT sessions. They should be treated as hypotheses and teaching tools, not definitive research findings.
 
