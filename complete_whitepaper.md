@@ -1,4 +1,4 @@
-# Recursive Prompting: The Architect’s Guide to Prompt Control
+# Recursive Prompting: The Systems Architect’s Guide to LLM Control
 
 **Author:** Seth Robins (Recursive Intelligence™)  
 **Publication Date:** January 31, 2026  

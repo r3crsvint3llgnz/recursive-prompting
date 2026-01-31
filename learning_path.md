@@ -4,7 +4,7 @@
 
 ---
 
-## Mastering Prompt Control
+## Mastering Recursive Prompting
 
 Learning to steer an LLM is like learning an instrument. You start with the scales, then the chords, then the composition. This path is designed to take you from a "hoper" to an "architect."
 

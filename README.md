@@ -1,4 +1,4 @@
-# Recursive Prompting: The Architect’s Guide to Prompt Control
+# Recursive Prompting: The Systems Architect’s Guide to LLM Control
 
 **Navigation:** [Manifesto](Manifesto.md) | [Learning Path](learning_path.md) | [Steering Moves](move_types_reference.md) | [Pattern Templates](pattern_templates_v1.md)
 

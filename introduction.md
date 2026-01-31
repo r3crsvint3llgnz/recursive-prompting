@@ -8,7 +8,7 @@ The problem with modern AI interaction is drift.
 
 We approach Large Language Models (LLMs) with intent, but we often leave with a "good enough" approximation. The gap between the intent and the output is where hallucinations, genericism, and logic errors live. We’ve spent years trying to solve this through "prompt engineering"—a collection of magic keywords and ritualized text.
 
-It is time to move past magic. It is time for **Prompt Control**.
+It is time to move past magic. It is time for **Recursive Prompting**.
 
 ## The Architecture of Steering
 
