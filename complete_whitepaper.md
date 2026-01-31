@@ -38,7 +38,7 @@ Identification of the failure modes associated with Recursive Prompting is essen
 
 ### 5. Discussion: Infrastructural Requirements
 
-The performance delta identified in this n=1 analysis highlights a fundamental shift in the conceptualization of LLM utility. Quality is not a static property inherited from model weights; it is a dynamic consequence of the interactional scaffold. Infrastructural deficits in current LLM interfaces remain the primary obstacle to the realization of formal "Prompt Control." Existing platforms prioritize high-volume consumption over precise steering—a design philosophy that obscures the underlying mechanical process. Stabilization of intent requires a technical transition towards visible scaffolding; interfaces must facilitate the implementation of metacognitive pauses and multi-stage exploratory divergence. 
+The performance delta identified in this n=1 analysis highlights a fundamental shift in the conceptualization of LLM utility. Quality is not a static property inherited from model weights; it is a contingent consequence of the interactional scaffold. Infrastructural deficits in current LLM interfaces remain the primary obstacle to the realization of formal "Prompt Control." Existing platforms prioritize high-volume consumption over precise steering—a design philosophy that obscures the underlying mechanical process. Stabilization of intent requires a technical transition towards visible scaffolding; interfaces must facilitate the implementation of metacognitive pauses and multi-stage exploratory divergence. 
 
 ---
 

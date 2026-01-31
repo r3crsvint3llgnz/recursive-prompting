@@ -1,44 +1,10 @@
-# Move Analysis: The Atoms of Steering
+# Move Analysis: Functional Taxonomy and Frequency Distribution
 
-**Navigation:** [← Back to README](README.md) | [Methodology](methodology.md)
+The formalization of Recursive Prompting requires a quantitative assessment of the operations used to stabilize model state. Analysis of the 1,980 discrete steering operations identified in this corpus reveals a heavily skewed distribution, with high-frequency moves such as "Probe," "Scope Control," and "Format Control" carrying the primary workload of intent preservation. These operations facilitate the rhythmic transition between exploratory divergence (13.8% frequency) and executive convergence (13.5%), ensuring that the solution space is both sufficiently surveyed and rigorously constrained. 
 
----
+The low frequency of higher-order moves—such as "Metacognition" (3.5%) and "Hypothesis" (0.8%)—does not reflect a lack of utility; rather, it indicates their role as specialized regulatory mechanisms. While infrequent, metacognitive operations correlate with a disproportionate stabilization of output relevance, serving as a critical barrier against logic circularity and context drift. Furthermore, the nearly symmetrical ratio between scope-tightening and scope-loosening operations demonstrates that effective steering is not a linear path toward precision, but a contingent oscillation designed to maintain informational breadth while finalizing local details. 
 
-I do not guess; I measure. In my analysis of 441 interaction threads, I mapped 1,980 discrete **Steering Moves**. This is the data on how those moves distribute across a successful control loop.
-
-## Move Frequency Distribution
-
-Reliability correlates with frequency. In my dataset, the workload is overwhelmingly carried by the **Probe** and **Scope Control** moves.
-
-| Steering Move      | Frequency | Percentage | Role in Loop |
-|--------------------|-----------|------------|--------------|
-| [Probe](move_types_reference.md#1-probe) | 274 | 13.8% | Divergence |
-| [ScopeTighten](move_types_reference.md#2-scopetighten) | 267 | 13.5% | Convergence |
-| [ScopeLoosen](move_types_reference.md#3-scopeloosen) | 266 | 13.4% | Context Expansion |
-| [FormatControl](move_types_reference.md#4-formatcontrol) | 248 | 12.5% | Constraint |
-| [Seed](move_types_reference.md#5-seed) | 211 | 10.7% | Initialization |
-| [Refine](move_types_reference.md#6-refine) | 122 | 6.2% | Iteration |
-| [ConstraintsAdd](move_types_reference.md#7-constraintsadd) | 102 | 5.2% | Precision |
-| [RoleShift](move_types_reference.md#8-roleshift) | 152 | 7.7% | Perspective |
-| [Recurse](move_types_reference.md#9-recurse) | 148 | 7.5% | Feedback |
-| [Meta](move_types_reference.md#10-meta) | 70 | 3.5% | Metacognition |
-| [Compare](move_types_reference.md#11-compare) | 67 | 3.4% | Evaluation |
-| [Decompose](move_types_reference.md#12-decompose) | 38 | 1.9% | Architecture |
-| [Hypothesis](move_types_reference.md#13-hypothesis) | 15 | 0.8% | Epistemic Test |
-
-## High-Leverage Observations
-
-1.  **Metacognition Leverage**: While [Meta](move_types_reference.md#10-meta) represents only 3.5% of the moves, it correlates with a disproportionate increase in output relevance. It is the lever that moves the world.
-2.  **The Zoom Ratio**: The balance between [Tighten](move_types_reference.md#2-scopetighten) and [Loosen](move_types_reference.md#3-scopeloosen) (13.5% vs 13.4%) is nearly 1:1. Success is a rhythmic oscillation, not a linear path.
-3.  **The Structural Gap**: Low-frequency moves like [Decompose](move_types_reference.md#12-decompose) and [Hypothesis](move_types_reference.md#13-hypothesis) are specialized tools. They are the "deep repairs" used when the context has become too fuzzy for high-frequency moves to fix.
-
-## Transition Thermodynamics: The Flow of Control
-
-Moves do not exist in isolation. They form sequences—the "molecules" of prompting.
-
-*   **[Probe → Refine]**: The most common sequence for creative synthesis.
-*   **[Seed → Probe]**: The standard initialization for research tasks.
-*   **[Meta → Decompose]**: The recovery sequence. Used to restart a drifting context.
+Interactional thermodynamics within the framework suggest that moves do not operate in isolation but form complex "molecular" sequences. Common initialization protocols, such as the [Seed → Probe] sequence, establish the baseline constraints before widening the Solution space. Recovery from conversational entropy typically requires the implementation of higher-level [Meta → Decompose] sequences—operations designed to reset the model state by stripping peripheral context. The frequency distribution and transition mapping identified here provide a technical foundation for the development of automated scaffolding tools in subsequent research phases.
 
 ---
 
