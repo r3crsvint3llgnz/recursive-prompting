@@ -1,32 +1,7 @@
 # Introduction: The Control Problem
 
-**Navigation:** [← Back to README](README.md) | [Methodology](methodology.md)
+Stochastic decay—the progressive divergence between initial operator intent and eventual model output—remains the primary barrier to high-fidelity Large Language Model (LLM) utilization. Conventional "prompt engineering" operates largely through lexical trial and error; users employ ritualized text strings in the hope of eliciting favorable probabilistic distributions. This approach lacks the structural rigor necessary for the stabilization of complex conversational states. 
 
----
+Recursive Prompting addresses this deficit through the implementation of **Cognitive Scaffolding**. By treating the LLM as a multi-stage reasoning engine rather than a single-shot retrieval system, this methodology establishes a mechanical feedback loop for the continuous calibration of model state. The objective of this study is the formalization of this loop into its constituent steering operations and sequence patterns.
 
-The problem with modern AI interaction is drift. 
-
-We approach Large Language Models (LLMs) with intent, but we often leave with a "good enough" approximation. The gap between the intent and the output is where hallucinations, genericism, and logic errors live. We’ve spent years trying to solve this through "prompt engineering"—a collection of magic keywords and ritualized text.
-
-It is time to move past magic. It is time for **Recursive Prompting**.
-
-## The Architecture of Steering
-
-**Recursive Prompting** is not a clever trick. It is a system of **Cognitive Scaffolding**. It treates the LLM not as a source of truth, but as an engine of possibility that must be constrained, steered, and refined through a mechanical loop.
-
-This whitepaper documents my exploratory analysis of that system.
-
-## The Objective of this Study
-
-I analyzed 441 of my own interaction threads to expose the mechanism of control. My goal was not to prove a universal law, but to understand my own habits well enough to formalize them into a toolset.
-
-I am looking for the atomic units of steering:
-1.  **Taxonomy**: Identifying the 13 [Core Steering Moves](move_types_reference.md) that actually move the needle.
-2.  **Patterns**: Recognizing the stable molecules—the [Patterns](pattern_templates_v1.md)—that produce repeatable quality.
-3.  **Metacognition**: Understanding the "pause"—the moment of reflection that fixes the question before fixing the answer.
-
-## A Note for the Practitioner
-
-If you are looking for a randomized control trial, you are in the wrong place. This is an **n=1** study. It is a practitioners' log. It is the record of an architect optimizing a broken system.
-
-Treat these findings as a blueprint. Build them. Test them. Break them. Then see if your own output becomes solid.
+This analysis prioritizes three primary areas of investigation: the categorization of 13 Steering Moves into a functional taxonomy; the identification of stable sequence patterns for repeatable outcome generation; and the role of metacognitive regulation—the "pause"—in the mitigation of intent drift. This is a practitioner’s record of system optimization. The findings presented here are intended to serve as a technical blueprint for operators seeking to replace stochastic hope with mechanical steering. Success in this domain is not an accident of phrasing; it is a consequence of architectural precision.
