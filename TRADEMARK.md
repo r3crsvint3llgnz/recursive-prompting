@@ -1,50 +1,37 @@
-# Trademark Notice
+# Trademark Guidelines: Protecting the Mechanism
 
-## Recursive Prompting™
+**Recursive Prompting™** and **Recursive Intelligence™** represent a specific architecture of cognitive steering developed by Seth Robins. These guidelines ensure that the system's integrity and provenance are maintained as it is adopted by the broader community.
 
-**"Recursive Prompting"** is a trademark of **Recursive Intelligence**, coined and developed by Seth Robins.
+## 1. Core Trademarks
 
-### Usage Guidelines
+*   **Recursive Prompting™**: The overarching methodology of iterative, move-based LLM steering.
+*   **Recursive Intelligence™**: The research and development entity behind the methodology.
 
-#### Permitted Uses
-- **Academic and Educational**: You may reference "Recursive Prompting" in academic papers, educational materials, and research with proper attribution
-- **Commentary and Analysis**: You may discuss and analyze the Recursive Prompting methodology in articles, blog posts, and reviews
-- **Implementation**: You may implement and adapt the techniques described in this whitepaper for personal and commercial use
+## 2. Permitted Use (The Loop is Open)
 
-#### Required Attribution
-When referencing Recursive Prompting, please include:
-```
-Recursive Prompting™ methodology by Seth Robins (Recursive Intelligence)
-```
+I believe the mechanism should be accessible. You are encouraged to:
+*   **Implement**: Use the transitions and [Pattern Templates](pattern_templates_v1.md) in your personal and commercial workflows.
+*   **Teach**: Reference the methodology in educational materials, workshops, and coaching.
+*   **Analyze**: Conduct research, write commentary, and build derivatives based on these findings.
 
-#### Restricted Uses
-- **Commercial Branding**: You may not use "Recursive Prompting" as part of your company name, product name, or service branding without explicit permission
-- **Derivative Trademarks**: You may not create derivative trademarks based on "Recursive Prompting" (e.g., "Advanced Recursive Prompting", "Recursive Prompting Pro")
-- **Misleading Attribution**: You may not claim to have invented or originated the Recursive Prompting methodology
+## 3. Required Attribution
 
-## Recursive Intelligence™
+Precision requires source integrity. When referencing the methodology, the following attribution is required:
+> *Recursive Prompting™ methodology developed by Seth Robins (Recursive Intelligence).*
 
-**"Recursive Intelligence"** is a trademark representing the research and development entity behind the Recursive Prompting methodology.
+## 4. Restrictions (The Constraints)
 
-### Contact for Licensing
-For commercial licensing inquiries or trademark permissions, please contact:
-- **Entity**: Recursive Intelligence
-- **Creator**: Seth Robins
-- **Contact**: [Contact information to be provided by repository owner]
+To prevent market confusion and "magic prompt" dilution, the following uses are restricted:
+*   **Product Branding**: You may not name your software, company, or service "Recursive Prompting" or "Recursive Intelligence" without explicit written permission.
+*   **Derivative Branding**: You may not create confusingly similar marks (e.g., "Recursive Prompting Pro", "Recursive Intelligence AI").
+*   **Misleading Provenance**: You may not claim authorship or origin of the core taxonomy or patterns.
 
-## Fair Use and Academic Freedom
+## 5. Licensing & Permissions
 
-This trademark notice is designed to protect the integrity and attribution of the methodology while supporting:
-- Academic research and citation
-- Educational use and teaching
-- Open source implementation
-- Community development and adaptation
+The **analytical content** of this repository is licensed under **[CC BY-SA 4.0](LICENSE.md)**. The trademark protects the **identity and reputation** of the system.
 
-## Relationship to Creative Commons License
-
-The **content and analysis** in this whitepaper are licensed under CC BY-SA 4.0, while the **data and templates** are released under CC0. The trademark protects the **name and attribution** of the methodology, ensuring proper credit while allowing broad use of the actual techniques and materials.
+For commercial licensing, enterprise integration, or trademark permissions, contact Seth Robins.
 
 ---
 
-**Last Updated**: August 31, 2025  
-**Version**: 1.0
+*Integrity is the anchor of precision. Respect the source, then steer the model.*

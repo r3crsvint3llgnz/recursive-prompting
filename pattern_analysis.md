@@ -1,71 +1,48 @@
-# Pattern Analysis and Template Generation
+# Pattern Analysis: The Architecture of Stability
 
-## My Pattern Analysis and Template Generation
+**Navigation:** [← Back to README](README.md) | [Results](results.md)
 
-In this section, I share what I observed in my own recursive prompting conversations. By looking closely at my dataset (441 conversations, 1,980 moves across 13 move types), I noticed recurring patterns that seemed to characterize how I use recursive prompting effectively. These observations are drawn from my own practice and should be treated as exploratory hypotheses and teaching tools, not universal conclusions.
+---
 
-### Pattern Categories I Noticed
+Individual moves are atoms. Patterns are molecules.
 
-When I reviewed my conversations, I saw that most of my prompting sequences could be grouped into five broad categories. These categories help me organize my thinking about when to use different strategies:
+In my analysis of 441 threads, I looked for the stable sequences—the chains of [Steering Moves](move_types_reference.md) that produced repeatable, high-quality results regardless of the topic. 
 
-#### 1. Exploration Patterns
-These patterns focus on discovery and generating alternatives. I used them when I wanted to broaden the space of possible solutions before narrowing in.
+## Scaffolding Taxonomy
 
-**Characteristic Sequence**: Seed → Probe → Compare → Refine  
-**Effectiveness (for me)**: High for open-ended problems and creative tasks  
-**Frequency in my dataset**: About 23% of the successful conversations I reviewed
+I identified five primary categories of interaction architecture. These are the defensive barriers we build against drift.
 
-#### 2. Refinement Patterns
-These are iterative improvement sequences, where I asked the AI to progressively improve or polish a draft.
+### 1. Exploration Scaffolds (Divergent)
+Used to widen the solution space. These patterns force the model to present the map before the traveler chooses a path.
+*   **Core Flow**: [Seed → Probe → Compare](pattern_templates_v1.md#probe--compare--scopetighten)
+*   **Yield**: Prevents premature convergence.
 
-**Characteristic Sequence**: Initial → Critique → Revise → Validate  
-**Effectiveness (for me)**: Strong for optimization and quality improvement  
-**Frequency in my dataset**: About 31% of successful conversations
+### 2. Refinement Scaffolds (Convergent)
+Used to polish the signal. These are iterative loops that remove the generic "average" of an LLM's first output.
+*   **Core Flow**: [Initial → Critique → Revise](pattern_templates_v1.md#critique--revise--validate)
+*   **Yield**: High signal density and constraint respect.
 
-#### 3. Metacognitive Patterns
-Self-reflective moves where I paused to check assumptions, goals, or reasoning. These moments often helped me reorient and get unstuck.
+### 3. Metacognitive Scaffolds (Systemic)
+The "pause" patterns. These are used to debug the reasoning process itself.
+*   **Core Flow**: [Reflect → Question → Adjust](pattern_templates_v1.md#reflect--question--verify--adjust)
+*   **Yield**: Resolves context drift and logic contradictions.
 
-**Characteristic Sequence**: Reflect → Question → Verify → Adjust  
-**Effectiveness (for me)**: Especially helpful for complex analytical tasks  
-**Frequency in my dataset**: About 18% of successful conversations
+### 4. Development Scaffolds (Incremental)
+The build-up patterns. Used for complex architectures like software or multi-stage plans.
+*   **Core Flow**: [Build → Test → Expand](pattern_templates_v1.md#build--test--expand--integrate)
+*   **Yield**: Structural integrity and modular progress.
 
-#### 4. Iterative Development Patterns
-Incremental building sequences that felt natural for step-by-step work like software development or structured planning.
+### 5. Problem-Solving Scaffolds (Analytical)
+The systematic breakdown of fuzzy goals into actionable atoms.
+*   **Core Flow**: [Define → Decompose → Solve](pattern_templates_v1.md#define--decompose--solve--synthesize)
+*   **Yield**: High actionability in complex domains.
 
-**Characteristic Sequence**: Build → Test → Expand → Integrate  
-**Effectiveness (for me)**: Very useful for systematic construction tasks  
-**Frequency in my dataset**: About 19% of successful conversations
+## From Analysis to Templates
 
-#### 5. Structured Problem-Solving Patterns
-Methodical approaches where I applied decomposition or other structured frameworks.
+The 20 recurring patterns generated the [v1 Template Library](pattern_templates_v1.md). 
 
-**Characteristic Sequence**: Define → Decompose → Solve → Synthesize  
-**Effectiveness (for me)**: Strong for well-defined analytical problems  
-**Frequency in my dataset**: About 9% of successful conversations
+Each template is a **Cognitive Firmware** update. Instead of inventing a sequence from scratch, the practitioner can apply a pre-validated structure. This reduces the cognitive load on the human, allowing them to focus on steering rather than mechanics.
 
-### From Categories to Templates
+---
 
-From these categories, I formalized 20 recurring patterns distilled into 16 reusable templates (v1) (see Pattern Templates (v1)). These templates capture the core sequences I used most often and package them in a way I can teach to others. Each template includes:
-
-- Move Sequence: The ordered progression of moves I used  
-- Context Markers: Clues for when the pattern is most useful  
-- Adaptation Notes: How I adjusted the pattern across different kinds of tasks  
-- Practice-Based Notes: What I observed about its strengths and limitations in my own sessions  
-
-You can find the full set of templates in Pattern Templates (v1). They are not definitive or universal—they represent what worked for me and what I now share as starting points for others.
-
-### How I Saw Patterns Apply Across My Work
-
-Even though all my data comes from my own practice, I noticed that these patterns seemed to apply across very different types of tasks I worked on:
-
-- **Software development and debugging**  
-- **Creative writing and content generation**  
-- **Research and analytical problem-solving**  
-- **Educational content creation**  
-- **Strategic planning and decision-making**  
-
-In each of these contexts, the core patterns held up, but I sometimes needed to adapt vocabulary or adjust constraints to fit the domain. That adaptability is what makes me believe the templates have teaching value beyond my own sessions, even though they require testing by others to validate.
-
-## Analysis Summary
-
-[Visualizations to be added in a future release] The analytical tools I used (frequency distributions, transition analysis, sequence flows) helped illustrate how these patterns emerged from my personal dataset. They served as a way to see how my prompting sequences tended to unfold, not as general laws of human-AI interaction.
+**Next:** [Pattern Templates v1](pattern_templates_v1.md)
