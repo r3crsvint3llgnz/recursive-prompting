@@ -1,11 +1,17 @@
 # Manifesto: The Architecture of Reasoning
 
-This framework rejects the colloquial conceptualization of "prompt engineering" as a collection of lexical heuristics. It prioritizes the rigorous implementation of **Prompt Control**—a discipline centered on the mechanical stabilization of machine-human reasoning trajectories. **Recursive Prompting** provides the necessary **Cognitive Scaffolding** to mitigate the stochastic decay typical of complex interactional states; it facilitates the decomposition of abstract intent into discrete, inspectable, and steerable operations.
+Prompt engineering, as the term is commonly used, describes something too small. It describes word choice. The assumption underneath it is that the right phrasing unlocks the right output — that the model is a lock and the user is hunting for the correct key.
 
-The development of this methodology originated from a fundamental requirement for informational fidelity. In high-complexity reasoning environments, implicit context and unmanaged probabilistic drift frequently result in the degradation of output coherence. By enforcing an explicit, multi-stage control loop, the operator ensures the visibility of the underlying reasoning mechanism. This approach transforms the Large Language Model (LLM) from a black-box oracle into a steerable engine of probability—one where performance is a direct consequence of structural precision rather than ritualized text.
+This framework starts from a different premise. Language models do not have keys. They have probability distributions conditioned on context. What controls output quality is not the phrasing of a single prompt. It is the structure of the entire interaction — what context exists, what constraints are active, what the model has been asked to verify, and when the human re-anchors against drift.
 
-The foundations of Recursive Prompting rest on four primary pillars of intent stabilization: the anchoring of interactional state through objective "Seed" moves; the utilization of constraint-driven "torque" to elicit narrow probabilistic distributions; the mitigation of cognitive overload through strategic scope-tightening; and the integration of metacognitive pauses for continuous calibration. This framework demands that the practitioner assume responsibility for the architectural integrity of the reasoning process. Success is not a property of the model’s linguistic fluency; it is a consequence of the operator’s structural scaffolding. 
+Recursive Prompting formalizes that structure. It identifies the 13 operations that do real work in a steering loop, names the failure modes each one addresses, and establishes the minimal viable sequence for reliable output: generate options, commit to one, improve the result. Everything beyond that baseline applies to specific failure classes — shallow depth, premature commitment, scope creep, goal displacement — each of which has a diagnosable symptom and a corrective move.
+
+The discipline this requires is not technical. It is architectural. Before sending the first prompt, define what success looks like. Specify what the output must and must not contain. Choose the move that fits the dominant failure mode of the task type. Monitor for drift. Intervene when it appears.
+
+A model running without structural control does not produce bad outputs most of the time. It produces plausible outputs — outputs that satisfy the surface requirements of the request without reliably satisfying the underlying goal. The gap between plausible and useful is where the discipline lives.
+
+The model's output is not a function of the model. It is a function of the structure built around the model's execution. This framework builds that structure.
 
 ---
 
-*Recursive Prompting™ by Seth Robins (Recursive Intelligence™)*
+*Recursive Prompting™ by Seth Robins — Recursive Intelligence™*

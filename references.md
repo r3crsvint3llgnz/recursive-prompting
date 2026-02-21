@@ -1,55 +1,59 @@
-**Navigation:** [← Previous: Conclusion](conclusion.md) | [Back to Index](README.md)
+# References
+
+## Note on Citation Scope
+
+The n=1 methodology and the 13-move taxonomy in this series are derived from the practitioner's own thread analysis. The citations below fall into two categories: (1) works that directly informed specific sections, cited inline in those sections; and (2) works situating Recursive Prompting in the broader prompting research landscape, provided for context and further reading.
+
+Section 01 draws on Wei et al. (2022), Yao et al. (2023), and Zhou et al. (2022) for the technical framing of CoT, ToT, and LtM limitations. Section 03 cites Madaan et al. (2023) for SELF-REFINE performance data. All other sections derive from the practitioner's own analysis.
 
 ---
 
-# Context and Further Reading
+## Works Cited
 
-## Note on References
+**Madaan, A., Tandon, N., Gupta, P., Hallinan, S., Gao, L., Wiegreffe, S., Alon, U., Dziri, N., Prabhumoye, S., Yang, Y., Welleck, S., Majumder, B. P., Gupta, S., Yazdanbakhsh, A., & Clark, P.** (2023). SELF-REFINE: Iterative refinement with self-feedback. *Advances in Neural Information Processing Systems (NeurIPS)*, 36. [https://arxiv.org/abs/2303.17651](https://arxiv.org/abs/2303.17651)
 
-This self-study is based entirely on my own practice and analysis of my personal prompting data (n=1). I did not draw from existing research or white papers in generating the findings presented here.
-The works listed below are provided as **context and further reading** for those who wish to situate recursive prompting alongside broader prompting research and practitioner resources.
-They did not inform my results directly, but they highlight directions I see as relevant for future exploration, validation, and expansion.
+> Establishes the three-role self-improvement loop (Generator, Critic, Refiner) requiring no additional training data. Performance data cited in Section 03: mathematical reasoning 22.1% → 59.0%, complex constraint satisfaction 4.4% → 61.3%.
 
 ---
 
-## Selected Research on Prompting and LLM Behavior
+**Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q., & Zhou, D.** (2022). Chain-of-thought prompting elicits reasoning in large language models. *Advances in Neural Information Processing Systems (NeurIPS)*, 35. [https://arxiv.org/abs/2201.11903](https://arxiv.org/abs/2201.11903)
 
-1. Wei, J., et al. (2022). **Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.** arXiv:2201.11903.
-   [https://arxiv.org/abs/2201.11903](https://arxiv.org/abs/2201.11903)
-
-2. White, J., et al. (2023). **A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT.** arXiv:2302.11382.
-   [https://arxiv.org/abs/2302.11382](https://arxiv.org/abs/2302.11382)
-
-3. Zhou, Y., et al. (2024). **The Prompt Report: A Systematic Survey of Prompting Techniques.** arXiv:2406.06608.
-   [https://arxiv.org/abs/2406.06608](https://arxiv.org/abs/2406.06608)
+> Foundation paper for Chain-of-Thought prompting. Establishes that externalizing intermediate reasoning steps improves performance on multi-step tasks. Cited in Section 01 for the CoT baseline comparison and its limitation: errors in early reasoning steps cascade through the chain.
 
 ---
 
-## Practitioner White Papers and Guides
+**Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T., Cao, Y., & Narasimhan, K.** (2023). Tree of thoughts: Deliberate problem solving with large language models. *Advances in Neural Information Processing Systems (NeurIPS)*, 36. [https://arxiv.org/abs/2305.10601](https://arxiv.org/abs/2305.10601)
 
-4. OpenAI (2024). **GPT‑4.1 Prompting Guide.** Cookbook resource with updated prompting strategies.
-   [https://cookbook.openai.com/examples/gpt4-1_prompting_guide](https://cookbook.openai.com/examples/gpt4-1_prompting_guide)
-
-5. OpenAI (2025). **GPT‑5 Prompting Guide.** Early practitioner notes on GPT‑5 prompting and agentic use cases.
-   [https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide](https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide)
-
-6. Google (2024). **Prompt Engineering Whitepaper (Marketing Guide).** A 68‑page practitioner resource on prompt design.
-   [https://bootstrapcreative.com/google-prompt-engineering-whitepaper-marketing-guide/](https://bootstrapcreative.com/google-prompt-engineering-whitepaper-marketing-guide/)
-
-7. Anthropic (2024). **Building Effective Agents with Prompt Chaining.** Research and practitioner insights.
-   [https://www.anthropic.com/research/building-effective-agents](https://www.anthropic.com/research/building-effective-agents)
+> Introduces ToT as a branching, backtracking extension of CoT. Cited in Section 01: ToT outperforms CoT by ~25% on complex planning tasks but remains single-pass at each node, preserving the core vulnerability to local context drift.
 
 ---
 
-## How I Plan to Use These Works
+**Zhou, D., Schärli, N., Hou, L., Wei, J., Scales, N., Wang, X., Schuurmans, D., Cui, C., Bousquet, O., Le, Q., & Chi, E.** (2022). Least-to-most prompting enables complex reasoning in large language models. *arXiv preprint arXiv:2205.10625*. [https://arxiv.org/abs/2205.10625](https://arxiv.org/abs/2205.10625)
 
-While none of these informed my self-study directly, I see them as resources for situating recursive prompting in a larger conversation.
-In future iterations, especially as I expand beyond my own dataset into multi-user controlled studies, I expect to connect my analysis with the frameworks and techniques described in these works.
-
----
-
-**Navigation:** [← Previous: Conclusion](conclusion.md) | [Back to Index](README.md)
+> Introduces hierarchical decomposition as a prompting strategy: break the problem into subproblems, solve sequentially, inject each solution as context for the next. Cited in Section 01 for LtM's ability to handle chains CoT cannot, and its residual limitation: better ordering does not eliminate autoregressive noise within each subproblem.
 
 ---
 
-**License:** This work is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | **Trademark:** Recursive Prompting™ by Seth Robins (Recursive Intelligence™) | See [TRADEMARK.md](TRADEMARK.md) for usage guidelines
+## Further Reading
+
+The works below were not cited in the main series but provide relevant context for situating Recursive Prompting in the broader field.
+
+**White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., Spencer-Smith, J., & Schmidt, D. C.** (2023). A prompt pattern catalog to enhance prompt engineering with ChatGPT. *arXiv preprint arXiv:2302.11382*. [https://arxiv.org/abs/2302.11382](https://arxiv.org/abs/2302.11382)
+
+> A practitioner-facing catalog of prompt patterns. Relevant for comparing pattern-based approaches to the sequence-based approach in this framework.
+
+**Schulhoff, S., Ilie, M., Balepur, N., Kahadze, K., Liu, A., Si, C., Li, Y., Gupta, A., Han, H., Schulhoff, S. I., Dulepet, P. S., Baskaran, S., Kim, M., Kim, B., Stewart, L., Singh, A., Pham, C. H., Bhatt, S., Janciauskis, T., … Gupta, O.** (2024). The prompt report: A systematic survey of prompting techniques. *arXiv preprint arXiv:2406.06608*. [https://arxiv.org/abs/2406.06608](https://arxiv.org/abs/2406.06608)
+
+> Comprehensive survey of prompting techniques across the literature as of mid-2024. Useful for placing this framework's vocabulary and approach within the broader taxonomy of the field.
+
+**Anthropic.** (2024). Building effective agents. *Anthropic Research*. [https://www.anthropic.com/research/building-effective-agents](https://www.anthropic.com/research/building-effective-agents)
+
+> Practitioner and research resource on agentic prompt chaining. Relevant for understanding how multi-step steering loops connect to autonomous agent architectures.
+
+**OpenAI.** (2024). GPT-4.1 prompting guide. *OpenAI Cookbook*. [https://cookbook.openai.com/examples/gpt4-1_prompting_guide](https://cookbook.openai.com/examples/gpt4-1_prompting_guide)
+
+> Model-specific prompting guidance focused on instruction following and agentic behavior. Useful for practitioners implementing this framework on GPT-class models.
+
+---
+
+*Recursive Prompting™ by Seth Robins — Recursive Intelligence™ | [CC BY-SA 4.0](LICENSE.md)*

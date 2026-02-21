@@ -1,21 +1,48 @@
-# Recursive Prompting: A Framework for Intent Stabilization in LLMs
+# Recursive Prompting
 
-Recursive Prompting is a systematic methodology for the mechanical steering of Large Language Models (LLMs). This project documents the formalization of "Prompt Control"—a discipline that replaces the trial-and-error heuristics of standard prompting with a rigorous, multi-stage interactional framework. By treating the LLM as an engine of probability that must be constrained and calibrated, this system facilitates high-fidelity outcome generation in complex reasoning environments.
-
-### Core Documentation
-
-The framework is supported by a comprehensive technical corpus outlining the methodology, taxonomy, and empirical observations derived from a single-practitioner exploratory study (n=1). 
-
-*   **[Manifesto: The Architecture of Reasoning](Manifesto.md)**: An architectural premise defining the conceptual foundations of cognitive scaffolding and intent stabilization.
-*   **[Abstract & Research Summary](abstract.md)**: A high-level overview of the 441 interaction threads and 1,980 steering operations analyzed in this corpus.
-*   **[Complete Whitepaper](complete_whitepaper.md)**: A unified technical document synthesizing the methodology, results, and failure mode taxonomy of the framework.
-*   **[Steering Moves Reference](move_types_reference.md)**: A functional taxonomy of the 13 discrete operations used for model state calibration.
-*   **[Pattern Templates (v1)](pattern_templates_v1.md)**: A library of 16 validated sequence patterns for predictable task execution.
-
-### Empirical Context
-
-Analysis of 441 discrete threads reveals a consistent correlation between recursive steering and the mitigation of stochastic drift. Observed performance deltas include a 34% subjective improvement in outcome quality and a significant increase in signal density across multiple domains—most notably technical architecture and strategic synthesis. This repository serves as a technical foundation for the transition from passive AI adoption to active systems steering; it provides the structural blueprints necessary for the development of reproducible, high-signal conversational states.
+**Author:** Seth Robins — Recursive Intelligence™  
+**Version:** 2.0 | **License:** [CC BY-SA 4.0](LICENSE.md)
 
 ---
 
-**License:** [CC BY-SA 4.0](LICENSE.md) | **Trademark:** Recursive Prompting™ (Recursive Intelligence™)
+Large language models are stochastic systems. Every token is a probability estimate conditioned on what came before. Over long contexts and complex reasoning tasks, that process drifts — not randomly, but in predictable, diagnosable patterns. Standard prompting has no mechanism for catching or correcting that drift. Recursive Prompting does.
+
+This framework defines a vocabulary of 13 steering moves, a structural loop for applying them, and a diagnostic protocol for recognizing when to intervene. It is grounded in post-hoc analysis of 441 interaction threads comprising 1,980 discrete steering operations. The performance data is single-practitioner (n=1) and explicitly carries that limitation. The mechanical framework does not depend on that data to be useful.
+
+---
+
+## Read the Series
+
+The framework is documented in five sequential sections. Each section assumes the previous one.
+
+| Section | File                                                                            | Contents                                                                                                                      |
+| ------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 01      | [Introduction: Why Simple Prompting Fails](01-introduction-problem-focused.md)  | The technical failure modes of autoregressive generation; why CoT, ToT, and LtM are insufficient; the case for a control loop |
+| 02      | [The Core Loop: Probe, Scope, Refine](02-core-loop-probe-scope-refine.md)       | All 13 steering moves with mechanical definitions; the default three-move sequence; performance data; use-case patterns       |
+| 03      | [The Recursive Self-Improving Prompt](03-recursive-self-improving-prompt.md)    | Delegating architectural work to the model itself; two templates with full annotation; the SELF-REFINE framework              |
+| 04      | [Implementation, Diagnostics, and Checklists](04-implementation-diagnostics.md) | Eight failure patterns with corrective moves; warning signs; three session checklists; quick-reference table                  |
+| 05      | [The Architect's Choice](05-architects-choice.md)                               | Synthesis and conclusion                                                                                                      |
+
+---
+
+## Reference Documents
+
+- **[Steering Moves Reference](move_types_reference.md)** — All 13 moves with definitions, failure modes they solve, and example prompts
+- **[Pattern Templates v1](pattern_templates_v1.md)** — Validated multi-move sequences for recurring task types
+- **[Learning Path](learning_path.md)** — Structured entry points by experience level
+- **[Methodology](methodology.md)** — How the 441-thread dataset was constructed and analyzed
+- **[Abstract](abstract.md)** — Research summary
+- **[References](references.md)** — Citations and further reading
+- **[Complete Whitepaper](complete_whitepaper.md)** — Unified single-document version of the full framework
+
+---
+
+## Empirical Summary
+
+The data comes from 441 interaction threads analyzed post-hoc to extract recurring structural patterns. Observed deltas against unstructured single-shot baselines: +34% outcome quality (subjective, 20-point rubric), +42% signal density, +31% objective fulfillment rate. The three highest-impact moves by frequency and effect size: **Meta**, **Decompose**, **Refine**.
+
+Single-practitioner limitations apply throughout. These numbers establish a foundation for future multi-user controlled trials, not a universal claim.
+
+---
+
+_Recursive Prompting™ is a trademark of Seth Robins / Recursive Intelligence™. See [TRADEMARK.md](TRADEMARK.md) for usage terms._
